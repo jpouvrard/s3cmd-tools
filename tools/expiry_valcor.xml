@@ -1,0 +1,28 @@
+<LifecycleConfiguration>
+    <Rule>
+        <ID>Delete-Objects-After-30-Days-strapi-export</ID>
+        <Filter>
+            <Prefix>data/coolify/backups/databases/l8l-team-15691/valcor-website-cms-strapi/</Prefix>
+        </Filter>
+        <Status>Enabled</Status>
+        <Expiration>
+            <Days>30</Days>
+        </Expiration>
+        <NoncurrentVersionExpiration>
+            <NoncurrentDays>30</NoncurrentDays>
+        </NoncurrentVersionExpiration>
+    </Rule>
+    <Rule>
+        <ID>Delete-Objects-After-30-Days-DB-files</ID>
+        <Filter>
+            <Prefix>data/coolify/backups/databases/l8l-team-15691/valcor-website-db</Prefix>
+        </Filter>
+        <Status>Enabled</Status>
+        <Expiration>
+            <Days>30</Days>
+        </Expiration>
+        <NoncurrentVersionExpiration>
+            <NoncurrentDays>30</NoncurrentDays>
+        </NoncurrentVersionExpiration>
+    </Rule>
+</LifecycleConfiguration>

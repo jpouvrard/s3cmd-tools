@@ -1,0 +1,15 @@
+<LifecycleConfiguration>
+    <Rule>
+        <ID>Delete-Objects-After-30-Days-strapi-export</ID>
+        <Filter>
+            <Prefix>backups/</Prefix>
+        </Filter>
+        <Status>Enabled</Status>
+        <Expiration>
+            <Days>30</Days>
+        </Expiration>
+        <NoncurrentVersionExpiration>
+            <NoncurrentDays>30</NoncurrentDays>
+        </NoncurrentVersionExpiration>
+    </Rule>
+</LifecycleConfiguration>
